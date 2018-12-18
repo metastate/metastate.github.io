@@ -120,6 +120,21 @@ a:hover {
 }
 
 
+/*
+Show only for Mobile
+*/
+
+.mobileshow {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .mobileshow {
+        display: block;
+    }
+}
+
+
 /**
  *  Typography
  *
