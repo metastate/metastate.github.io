@@ -21,42 +21,42 @@
 
 ::-moz-selection {
     /* Code for Firefox */
-    background-color: #FFAB0B;
+    background-color: #46dbf9;
     color: #fff;
 }
 
-::selection {
-    background-color: #FFAB0B;
+ ::selection {
+    background-color: #46dbf9;
     color: #fff;
 }
 
-::-webkit-input-placeholder {
+ ::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: #777777;
     font-weight: 300;
 }
 
-:-moz-placeholder {
+ :-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: #777777;
     opacity: 1;
     font-weight: 300;
 }
 
-::-moz-placeholder {
+ ::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: #777777;
     opacity: 1;
     font-weight: 300;
 }
 
-:-ms-input-placeholder {
+ :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #777777;
     font-weight: 300;
 }
 
-::-ms-input-placeholder {
+ ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #777777;
     font-weight: 300;
@@ -120,25 +120,10 @@ a:hover {
 }
 
 
-/*
-Show only for Mobile
-*/
-
-.mobileshowScreenShot {
-    display: none;
-}
-
-@media screen and (max-width: 500px) {
-    .mobileshowScreenShot {
-        display: block;
-    }
-}
-
-
 /**
- *  Typography
- *
- **/
+   *  Typography
+   *
+   **/
 
 .btn i,
 .btn-large i,
@@ -218,14 +203,14 @@ th {
 
 
 /**
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+   * For modern browsers
+   * 1. The space content is one way to avoid an Opera bug when the
+   *    contenteditable attribute is included anywhere else in the document.
+   *    Otherwise it causes space to appear at the top and bottom of elements
+   *    that are clearfixed.
+   * 2. The use of `table` rather than `block` is only necessary if using
+   *    `:before` to contain the top-margins of child elements.
+   */
 
 .clear::before,
 .clear::after {
@@ -916,16 +901,16 @@ th {
 .widget-wrap .newsletter-widget .bbtns,
 .footer-area .single-footer-widget .click-btn,
 .footer-area .footer-bottom .footer-social a:hover {
-    background-image: -moz-linear-gradient(0deg, #f9f646b4 0%, #fdec00 100%);
-    background-image: -webkit-linear-gradient(0deg, #f9f646b4 0%, #fdec00 100%);
-    background-image: -ms-linear-gradient(0deg, #f9f646b4 0%, #fdec00 100%);
-    background-image: -o-linear-gradient(0deg, #f9f646b4 0%, #fdec00 100%);
+    background-image: -moz-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
+    background-image: -webkit-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
+    background-image: -ms-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
+    background-image: -o-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
 }
 
 .p1-gradient-color {
-    background: -moz-linear-gradient(0deg, #f9f646 0%, #f3d10e 100%);
-    background: -webkit-linear-gradient(0deg, #f9f646 0%, #f3d10e 100%);
-    background: -ms-linear-gradient(0deg, #f9f646 0%, #f3d10e 100%);
+    background: -moz-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
+    background: -webkit-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
+    background: -ms-linear-gradient(0deg, #46dbf9 0%, #204be3 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -963,21 +948,14 @@ th {
 .buttons i {
     font-size: 44px;
     padding-right: 20px;
-    color: #0f0f0f;
-    margin-top: -8px;
-}
-
-.buttons:hover i {
-    font-size: 44px;
-    padding-right: 20px;
-    color: #ffffff;
+    color: #eeeeee;
     margin-top: -8px;
 }
 
 .buttons:hover {
     cursor: pointer;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
-    background-color: #FFAB0B;
+    background-color: #46dbf9;
     color: #fff !important;
     border: 1px solid transparent;
 }
@@ -1018,7 +996,7 @@ th {
 }
 
 .buttons.dark:hover {
-    background-color: #f9f646;
+    background-color: #46dbf9;
     border: 1px solid transparent;
 }
 
@@ -1067,18 +1045,18 @@ th {
 
 .primary-btn:hover {
     background: transparent;
-    color: #ffc400;
-    border-color: #f9f646;
+    color: #46dbf9;
+    border-color: #46dbf9;
 }
 
 .primary-btn.white {
     border: 1px solid #fff;
-    color: rgb(14, 13, 13);
+    color: #fff;
 }
 
 .primary-btn.white:hover {
     background: #fff;
-    color: #000000;
+    color: #46dbf9;
 }
 
 .white_bg_btn {
@@ -1102,9 +1080,9 @@ th {
 }
 
 .white_bg_btn:hover {
-    background: #f9f646;
+    background: #46dbf9;
     color: #fff;
-    border: 1px solid #f9f646;
+    border: 1px solid #46dbf9;
 }
 
 .overlay {
@@ -1130,7 +1108,7 @@ sup,
 sub,
 u,
 del {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 h1 {
@@ -1275,25 +1253,25 @@ h6 {
 
 .genric-btn.primary {
     color: #fff;
-    background: #f9f646;
+    background: #46dbf9;
     border: 1px solid transparent;
 }
 
 .genric-btn.primary:hover {
-    color: #f9f646;
-    border: 1px solid #f9f646;
+    color: #46dbf9;
+    border: 1px solid #46dbf9;
     background: #fff;
 }
 
 .genric-btn.primary-border {
-    color: #f9f646;
-    border: 1px solid #f9f646;
+    color: #46dbf9;
+    border: 1px solid #46dbf9;
     background: #fff;
 }
 
 .genric-btn.primary-border:hover {
     color: #fff;
-    background: #f9f646;
+    background: #46dbf9;
     border: 1px solid transparent;
 }
 
@@ -1429,7 +1407,7 @@ h6 {
 .generic-blockquote {
     padding: 30px 50px 30px 30px;
     background: #f9f9ff;
-    border-left: 2px solid #f9f646;
+    border-left: 2px solid #46dbf9;
 }
 
 .progress-table-wrap {
@@ -1559,7 +1537,7 @@ h6 {
     position: absolute;
     width: 14px;
     height: 14px;
-    border: 3px solid #f9f646;
+    border: 3px solid #46dbf9;
     background: #fff;
     top: 4px;
     left: 0;
@@ -1572,7 +1550,7 @@ h6 {
 
 .ordered-list li {
     list-style-type: decimal-leading-zero;
-    color: #f9f646;
+    color: #46dbf9;
     font-weight: 500;
     line-height: 1.82em !important;
 }
@@ -1585,7 +1563,7 @@ h6 {
 .ordered-list-alpha li {
     margin-left: 30px;
     list-style-type: lower-alpha;
-    color: #f9f646;
+    color: #46dbf9;
     font-weight: 500;
     line-height: 1.82em !important;
 }
@@ -1598,7 +1576,7 @@ h6 {
 .ordered-list-roman li {
     margin-left: 30px;
     list-style-type: lower-roman;
-    color: #f9f646;
+    color: #46dbf9;
     font-weight: 500;
     line-height: 1.82em !important;
 }
@@ -1670,7 +1648,7 @@ h6 {
 
 .single-input-primary:focus {
     outline: none;
-    border: 1px solid #f9f646;
+    border: 1px solid #46dbf9;
 }
 
 .single-input-accent {
@@ -1731,7 +1709,7 @@ h6 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #f9f646;
+    background: #46dbf9;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
@@ -1814,7 +1792,7 @@ h6 {
 }
 
 .primary-switch input:checked+label:before {
-    background: #f9f646;
+    background: #46dbf9;
 }
 
 .confirm-switch {
@@ -2163,12 +2141,12 @@ h6 {
 }
 
 .default-select .nice-select .list .option.selected {
-    color: #f9f646;
+    color: #46dbf9;
     background: transparent;
 }
 
 .default-select .nice-select .list .option:hover {
-    color: #f9f646;
+    color: #46dbf9;
     background: transparent;
 }
 
@@ -2218,12 +2196,12 @@ h6 {
 }
 
 .form-select .nice-select .list .option.selected {
-    color: #f9f646;
+    color: #46dbf9;
     background: transparent;
 }
 
 .form-select .nice-select .list .option:hover {
-    color: #f9f646;
+    color: #46dbf9;
     background: transparent;
 }
 
@@ -2238,8 +2216,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+  # Header
+  --------------------------------------------------------------*/
 
 .main-menu {
     padding-top: 20px;
@@ -2260,7 +2238,7 @@ h6 {
 }
 
 .header-scrolled {
-    background: rgba(255, 206, 71, 0.9);
+    background: rgba(70, 219, 249, 0.9);
     transition: all 0.5s;
 }
 
@@ -2283,7 +2261,7 @@ h6 {
 #header #logo h1 a:hover {
     color: #fff;
     padding-left: 10px;
-    border-left: 4px solid #f9f646;
+    border-left: 4px solid #46dbf9;
 }
 
 #header #logo img {
@@ -2302,8 +2280,8 @@ h6 {
 
 
 /*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+  # Navigation Menu
+  --------------------------------------------------------------*/
 
 
 /* Nav Menu Essentials */
@@ -2383,7 +2361,7 @@ h6 {
     margin: 0 -2px;
     text-decoration: none;
     display: inline-block;
-    color: rgb(7, 7, 7);
+    color: #fff;
     font-weight: 500;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
@@ -2417,7 +2395,7 @@ h6 {
 }
 
 .nav-menu ul li:hover a {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 .nav-menu ul ul {
@@ -2519,7 +2497,7 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 #mobile-nav ul .menu-has-children li a {
@@ -2527,7 +2505,7 @@ h6 {
 }
 
 #mobile-nav ul .menu-item-active {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 #mobile-body-overly {
@@ -2790,11 +2768,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     z-index: -1;
     width: 340px;
     height: 340px;
-    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9ed46 50%, #f3d10e 100%);
-    background: -webkit-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9ed46 50%, #f3d10e 100%);
-    background: -moz-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9ed46 50%, #f3d10e 100%);
-    background: -ms-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9ed46 50%, #f3d10e 100%);
-    background: -o-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9ed46 50%, #f3d10e 100%);
+    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -webkit-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -moz-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -ms-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -o-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
 }
 
 @media (max-width: 991px) {
@@ -2825,7 +2803,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .feature-area .single-feature .title .lnr {
-    color: rgb(58, 57, 57);
+    color: #fff;
     font-weight: 600;
     font-size: 24px;
     padding: 30px;
@@ -2843,7 +2821,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .feature-area .single-feature:hover h3 {
-    color: #fda400;
+    color: #46dbf9;
 }
 
 .fact-area .fact-box {
@@ -2900,11 +2878,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     z-index: -1;
     width: 340px;
     height: 340px;
-    background: linear-gradient(to bottom left, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -webkit-linear-gradient(to bottom left, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -moz-linear-gradient(to bottom left, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -ms-linear-gradient(to bottom left, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -o-linear-gradient(to bottom left, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
+    background: linear-gradient(to bottom left, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -webkit-linear-gradient(to bottom left, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -moz-linear-gradient(to bottom left, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -ms-linear-gradient(to bottom left, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -o-linear-gradient(to bottom left, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
 }
 
 @media (max-width: 991px) {
@@ -3049,11 +3027,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     z-index: -1;
     width: 340px;
     height: 340px;
-    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -webkit-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -moz-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -ms-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
-    background: -o-linear-gradient(to bottom right, transparent 0%, transparent 50%, #f9f646 50%, #f3d10e 100%);
+    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -webkit-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -moz-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -ms-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
+    background: -o-linear-gradient(to bottom right, transparent 0%, transparent 50%, #46dbf9 50%, #204be3 100%);
 }
 
 @media (max-width: 991px) {
@@ -3138,7 +3116,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .generic-banner {
     margin-top: 60px;
-    background-color: #f9f646;
+    background-color: #46dbf9;
     text-align: center;
 }
 
@@ -3288,8 +3266,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .contact-page-area .form-area .primary-btn:hover {
-    border: 1px solid #f9f646;
-    color: #f9f646 !important;
+    border: 1px solid #46dbf9;
+    color: #46dbf9 !important;
 }
 
 @media (max-width: 960px) {
@@ -3311,16 +3289,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact-page-area .single-contact-address .lnr {
     font-size: 30px;
     font-weight: 500;
-    color: #000000;
+    color: #46dbf9;
     margin-right: 30px;
 }
 
 
 /*
-################
-               Start Blog Home  Page style
-################
-*/
+  ################
+                 Start Blog Home  Page style
+  ################
+  */
 
 .blog-banner-area {
     background: url(../img/elements/blog/blog-banner.jpg) center;
@@ -3357,7 +3335,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-post .tags li:hover a {
-    color: #0f0d01;
+    color: #46dbf9;
 }
 
 .single-post h1 {
@@ -3416,7 +3394,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .search-widget i {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 .search-widget form.example {
@@ -3467,7 +3445,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .protfolio-widget ul li a i:hover {
-    color: #000000;
+    color: #46dbf9;
 }
 
 .category-widget ul li {
@@ -3496,12 +3474,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .category-widget ul li:hover {
-    border-color: #f9f646;
+    border-color: #46dbf9;
 }
 
 .category-widget ul li:hover h6,
 .category-widget ul li:hover span {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 .tags-widget ul li {
@@ -3522,7 +3500,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .tags-widget ul li:hover {
-    background-color: #f9f646;
+    background-color: #46dbf9;
 }
 
 .tags-widget ul li:hover a {
@@ -3547,7 +3525,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .recent-posts-widget .single-recent-post:hover h4 {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 @media (max-width: 960px) {
@@ -3558,17 +3536,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /*
-################
-               End Blog Home  Page style
-################
-*/
+  ################
+                 End Blog Home  Page style
+  ################
+  */
 
 
 /*
-################
-               Start Blog Details  Page style
-################
-*/
+  ################
+                 Start Blog Details  Page style
+  ################
+  */
 
 .nav-area {
     border-bottom: 1px solid #eee;
@@ -3674,17 +3652,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /*
-################
-               End Blog Details  Page style
-################
-*/
+  ################
+                 End Blog Details  Page style
+  ################
+  */
 
 
 /* =================================== */
 
 
 /*  Blog Styles
-/* =================================== */
+  /* =================================== */
 
 
 /*============ Start Blog Home Styles  =============*/
@@ -3857,7 +3835,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .post-content-area .single-post .meta-details .tags li a:hover {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 @media (max-width: 1024px) {
@@ -3882,7 +3860,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .post-content-area .single-post .date a:hover,
 .post-content-area .single-post .view a:hover,
 .post-content-area .single-post .comments a:hover {
-    color: #000000;
+    color: #46dbf9;
 }
 
 .post-content-area .single-post .user-name .lnr,
@@ -3929,7 +3907,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .posts-list .posts-title h3:hover {
-    color: #ffc400ad;
+    color: #46dbf9;
 }
 
 .blog-pagination {
@@ -4091,7 +4069,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .widget-wrap .user-info-widget .social-links li a:hover {
-    color: #ffc400;
+    color: #46dbf9;
 }
 
 .widget-wrap .popular-post-widget .popular-title {
@@ -4126,7 +4104,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .widget-wrap .popular-post-widget .single-post-list .details h6:hover {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 .widget-wrap .popular-post-widget .single-post-list .details p {
@@ -4320,7 +4298,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-post-area .social-links li a:hover {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 .single-post-area .quotes {
@@ -4587,7 +4565,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 /*  Footer Styles
-/* =================================== */
+  /* =================================== */
 
 .footer-area {
     background: #222222;
@@ -4682,7 +4660,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .footer-area .footer-bottom .footer-text a,
 .footer-area .footer-bottom .footer-text span {
-    color: #f9f646;
+    color: #46dbf9;
 }
 
 .footer-area .footer-bottom span {
