@@ -124,12 +124,12 @@ a:hover {
 Show only for Mobile
 */
 
-.mobileshow {
+.mobileshowScreenShot {
     display: none;
 }
 
 @media screen and (max-width: 500px) {
-    .mobileshow {
+    .mobileshowScreenShot {
         display: block;
     }
 }
