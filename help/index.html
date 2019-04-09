@@ -1,233 +1,265 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>Metastate Help</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<div class="container">
+    <div class="container">
+        <span style="font-size:28px;cursor:pointer" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+        </span>
 
-<div class="page-header">
-    <h1>&nbsp;&nbsp;&nbsp;Metastate Help</h1>
-</div>
 
-<!-- Bootstrap FAQ - START -->
-<div class="container">
-    <br />
-    <div class="panel-group" id="accordion">
-        <div class="faqHeader">Subscription</div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
-                </h4>
-            </div>
-            <div id="collapseOne" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    Account registration for <strong>Metastate</strong> is required to login and maintain purchases history. This ensures a valid communication channel for all parties involved in any transactions. 
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Turn off auto-renewal or cancel my subscription?</a>
-                </h4>
-            </div>
-            <div id="collapseTen" class="panel-collapse collapse">
-                <div class="panel-body">
-                    To turn off auto-renewable subscription, please follow the support link associated with the subscription on your account.</br>
-                    Link: <a href="http://support.apple.com/kb/ht4098">Apple Support</a>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">How to check the subscription status?</a>
-                </h4>
-            </div>
-            <div id="collapseEleven" class="panel-collapse collapse">
-                <div class="panel-body">
-                    You can check the status of your trial or subscription through the iTunes account settings on your device. <br />  Please see these instructions for canceling through your mobile device Settings: <br /> 
-            <p>
-1. On your iPhone or iPad, open Settings <br /> 
-2. Select iTunes & App Store <br /> 
-3. Tap your Apple ID at the top of the screen and then tap View Apple ID. Sign in if requested to do so <br /> 
-4. This brings you to an Account Settings page, where you can select the Subscriptions option and view your Metastate subscription. <br /> 
-5. Once there, you should see the Metastate subscription listed. <br />  6. If the subscription has been canceled, you will see the expiration date listed. If it has not been cancelled yet, you'll see the renewal date, along with the price you'll be charged at and a "Cancel Subscription" button. 
-                </p>                
-            </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseRefund"> I want a refund what can I do?</a>
-                </h4>
-            </div>
-            <div id="collapseRefund" class="panel-collapse collapse">
-                <div class="panel-body">
-                    You will need to contact Apple iTunes Store in order to get a refund.
-                </br> Please contact Apple iTunes Customer Support directly at <a href="https://support.apple.com/contact">Apple Support</a>. 
-                </div>
-            </div>
-        </div>
-        <div class="faqHeader">Account</div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How do I delete my account?
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                    If you would like to delete your Metastate account altogether, please send us your request to <a href="mailto:support@metastateapp.com">support@metastateapp.com</a>. 
-.
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">How can I change the password on my account?
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseThree" class="panel-collapse collapse">
-                <div class="panel-body">
-                    The steps involved in this process are really simple. All you need to do is:
-                    <ul>
-                        <li>If your account is already logged in, please logout.To do so, in the app go to, Settings > Account > Logout.  </li>
-                        <li>Once you press back button from the settings, a login screen will be presented.</li>
-                        <li>Choose forgot password to change your password.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Can I update the email address on my account?
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseFive" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Updating a new email address for your account is unfortunately unavailabel at this time. The account is directly tied to your email address for communication and to save purchases history.
-                    <br />
-                </div>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <a stlye="" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://metastate.github.io">Home</a>
+            <a href="https://goo.gl/forms/lSXIwkEiH8PkEx8y1">Get Support</a>
+            <a href="mailto:metastateapp@gmail.com">Email Us</a>
         </div>
 
-        <div class="faqHeader">Troubleshooting</div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Can I use Metastate app offline?</a>
-                </h4>
-            </div>
-            <div id="collapseFour" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Metastate streams audio from cloud storage and requires to be online. unfortunately offline operation is limited to the seven free chapters of the app.
-                    <br />
-                    To save space in your device Metastate is designed to stream audio directly and also does not save audio offline other than the free chapters.
-                </div>
-            </div>
+        <div class="page-header">
+            <h1 style="text-align: center">&nbsp;&nbsp;&nbsp;Metastate Help</h1>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Can I use Metastate on more than one device?
+        <!-- Bootstrap FAQ - START -->
+        <div class="container">
+            <br />
+            <div class="panel-group" id="accordion">
+                <div class="faqHeader">Subscription</div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Account registration for <strong>Metastate</strong> is required to login and maintain purchases history. This ensures a valid communication channel for all parties involved in any transactions.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">I want to manage my subscriptions!</a>
+                        </h4>
+                    </div>
+                    <div id="collapseEleven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Follow this link to manage your subscriptions</br>
+                            Link: <a href="https://support.apple.com/en-in/HT202039">Apple Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Turn off auto-renewal or cancel my subscription?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTen" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            To turn off auto-renewable subscription, please follow the support link associated with the subscription on your account.</br>
+                            Link: <a href="http://support.apple.com/kb/ht4098">Apple Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">How to check the subscription status?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwelve" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            You can check the status of your trial or subscription through the iTunes account settings on your device. <br /> Please see these instructions for canceling through your mobile device Settings: <br />
+                            <p>
+                                1. On your iPhone or iPad, open Settings <br /> 2. Select iTunes & App Store <br /> 3. Tap your Apple ID at the top of the screen and then tap View Apple ID. Sign in if requested to do so <br /> 4. This brings you to an
+                                Account Settings page, where you can select the Subscriptions option and view your Metastate subscription. <br /> 5. Once there, you should see the Metastate subscription listed. <br /> 6. If the subscription has been canceled,
+                                you will see the expiration date listed. If it has not been cancelled yet, you'll see the renewal date, along with the price you'll be charged at and a "Cancel Subscription" button.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseRefund"> I want a refund what can I do?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseRefund" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            You will need to contact Apple iTunes Store in order to get a refund.
+                            </br> Please contact Apple iTunes Customer Support directly at <a href="https://support.apple.com/contact">Apple Support</a>.
+                        </div>
+                    </div>
+                </div>
+                <div class="faqHeader">Account</div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">How do I delete my account?
                     </a>
-                </h4>
-            </div>
-            <div id="collapseSeven" class="panel-collapse collapse">
-                <div class="panel-body">
-                    You can access Metastate across multiple Apple mobile and tablet devices associated with the same Apple Id.
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            If you would like to delete your Metastate account altogether, please send us your request to <a href="mailto:metastateapp@gmail.com">metastateapp@gmail.com</a>.
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenStopped">Audio stopped abruptly while playing, what should I do about it?
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">How can I change the password on my account?
                     </a>
-                </h4>
-            </div>
-            <div id="collapseSevenStopped" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Problems regarding stuttered audio, playback delays and playback stopped are caused due to interuption in an internet connection. Please restart the app while making sure your connectivity is strong. 
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            The steps involved in this process are really simple. All you need to do is:
+                            <ul>
+                                <li>If your account is already logged in, please logout.To do so, in the app go to, Settings > Account > Logout. </li>
+                                <li>Once you press back button from the settings, a login screen will be presented.</li>
+                                <li>Choose forgot password to change your password.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenreset">How to reset my password?
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">Can I update the email address on my account?
                     </a>
-                </h4>
-            </div>
-            <div id="collapseSevenreset" class="panel-collapse collapse">
-                <div class="panel-body">
-                    The steps involved in this process are really simple. All you need to do is:
-                    <ul>
-                        <li>If your account is already logged in, please logout.To do so, in the app go to, Settings > Account > Logout.  </li>
-                        <li>Once you press back button from the settings, a login screen will be presented.</li>
-                        <li>Choose forgot password to change your password.</li>
-                    </ul>
+                        </h4>
+                    </div>
+                    <div id="collapseFive" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Updating a new email address for your account is unfortunately unavailabel at this time. The account is directly tied to your email address for communication and to save purchases history.
+                            <br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faqHeader">Troubleshooting</div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Can I use Metastate app offline?</a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Metastate streams audio from cloud storage and requires to be online. unfortunately offline operation is limited to the seven free chapters of the app.
+                            <br /> To save space in your device Metastate is designed to stream audio directly and also does not save audio offline other than the free chapters.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">Can I use Metastate on more than one device?
+                    </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSeven" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            You can access Metastate across multiple Apple mobile and tablet devices associated with the same Apple Id.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenStopped">Audio stopped abruptly while playing, what should I do about it?
+                    </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSevenStopped" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Problems regarding stuttered audio, playback delays and playback stopped are caused due to interuption in an internet connection. Please restart the app while making sure your connectivity is strong.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSevenreset">How to reset my password?
+                    </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSevenreset" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            The steps involved in this process are really simple. All you need to do is:
+                            <ul>
+                                <li>If your account is already logged in, please logout.To do so, in the app go to, Settings > Account > Logout. </li>
+                                <li>Once you press back button from the settings, a login screen will be presented.</li>
+                                <li>Choose forgot password to change your password.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <p><br></p><br/><br/><br/>
         </div>
+
+        <style>
+            .faqHeader {
+                font-size: 27px;
+                margin: 20px;
+            }
+            
+            .panel-heading [data-toggle="collapse"]:after {
+                font-family: 'Glyphicons Halflings';
+                content: "\e072";
+                /* "play" icon */
+                float: right;
+                color: #F58723;
+                font-size: 18px;
+                line-height: 22px;
+                /* rotate "play" icon from > (right arrow) to down arrow */
+                -webkit-transform: rotate(-90deg);
+                -moz-transform: rotate(-90deg);
+                -ms-transform: rotate(-90deg);
+                -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+            }
+            
+            .panel-heading [data-toggle="collapse"].collapsed:after {
+                /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+                color: #454444;
+            }
+        </style>
+
+        <!-- Bootstrap FAQ - END -->
+
     </div>
-    <br/><br/>
-    <h3><b><span style="font-family: Arial;"><a href="https://goo.gl/forms/lSXIwkEiH8PkEx8y1">Contact Us</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></b><b><span style="font-family: Arial;"><br/><br/><br/><a href="mailto:support@metastateapp.com">Get Support&nbsp;</a></span></b></h3><p><br></p><br/><br/><br/>
-</div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
 
-<style>
-    .faqHeader {
-        font-size: 27px;
-        margin: 20px;
-    }
-
-    .panel-heading [data-toggle="collapse"]:after {
-        font-family: 'Glyphicons Halflings';
-        content: "\e072"; /* "play" icon */
-        float: right;
-        color: #F58723;
-        font-size: 18px;
-        line-height: 22px;
-        /* rotate "play" icon from > (right arrow) to down arrow */
-        -webkit-transform: rotate(-90deg);
-        -moz-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        transform: rotate(-90deg);
-    }
-
-    .panel-heading [data-toggle="collapse"].collapsed:after {
-        /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-        color: #454444;
-    }
-</style>
-
-<!-- Bootstrap FAQ - END -->
-
-</div>
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 
 </body>
+
 </html>
